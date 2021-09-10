@@ -2978,7 +2978,7 @@
     <imas:Hip rdf:datatype="http://www.w3.org/2001/XMLSchema#float">83.0</imas:Hip>
     <imas:Constellation xml:lang="ja">蠍座</imas:Constellation>
     <schema:birthPlace xml:lang="ja">岐阜</schema:birthPlace>
-    <!-- <imas:cv xml:lang="ja">xxxx</imas:cv> -->
+    <imas:cv xml:lang="ja">二ノ宮ゆい</imas:cv>
     <!-- <imas:cv rdf:resource="http://ja.dbpedia.org/resource/xxxx"/> -->
     <!-- <imas:cv rdf:resource="http://www.wikidata.org/entity/Q0000000"/> -->
     <imas:Hobby xml:lang="ja">諜報活動</imas:Hobby>
