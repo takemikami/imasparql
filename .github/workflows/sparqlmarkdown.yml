@@ -20,4 +20,5 @@ jobs:
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git remote set-url origin https://x-access-token:$GH_TOKEN@github.com/$GITHUB_REPOSITORY
         # git branch
+        git commit -a -m "update sparql result of sample markdown"
         git push origin $GITHUB_REF
