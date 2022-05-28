@@ -1,0 +1,20 @@
+{
+	"problemMatcher": [
+		{
+			"owner": "rdflint",
+			"pattern": [
+				{
+					"regexp": "^([^\\s]*\\.(rdf|ttl|xml)+)$",
+					"file": 1
+				},
+				{
+					"regexp": "^\\s+(ERROR|WARN|INFO)\\s+([^(]*\\(line:\\s*([\\d+]+).*)$",
+					"line": 2,
+					"severity": 1,
+					"message": 3,
+					"loop": true
+				}
+			]
+		}
+	]
+}

@@ -19,7 +19,7 @@
     <schema:name xml:lang="ja">天海春香</schema:name>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">天海春香</rdfs:label>
     <schema:name xml:lang="en">Haruka Amami</schema:name>
-    <foaf:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</foaf:age>
+    <foaf:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-17</foaf:age>
     <schema:height rdf:datatype="http://www.w3.org/2001/XMLSchema#float">158.0</schema:height>
     <schema:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">46.0</schema:weight>
     <imas:Bust rdf:datatype="http://www.w3.org/2001/XMLSchema#float">83.0</imas:Bust>
