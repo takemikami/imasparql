@@ -10,8 +10,8 @@
 				},
 				{
 					"regexp": "^\\s+(ERROR|WARN|INFO)\\s+([^(]*\\(line:\\s*([\\d+]+).*)$",
-					"line": 2,
-					"message": 3,
+					"line": 3,
+					"message": 2,
 					"loop": true
 				}
 			]
