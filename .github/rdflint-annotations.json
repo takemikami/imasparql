@@ -2,6 +2,7 @@
 	"problemMatcher": [
 		{
 			"owner": "rdflint",
+			"severity": "warning",
 			"pattern": [
 				{
 					"regexp": "^([^\\s]*\\.(rdf|ttl|xml)+)$",
@@ -10,7 +11,6 @@
 				{
 					"regexp": "^\\s+(ERROR|WARN|INFO)\\s+([^(]*\\(line:\\s*([\\d+]+).*)$",
 					"line": 2,
-					"severity": 1,
 					"message": 3,
 					"loop": true
 				}
