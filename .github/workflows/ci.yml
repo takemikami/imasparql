@@ -17,13 +17,14 @@ jobs:
     - uses: imas/setup-rdflint@v2
 
     - name: Run rdflint (Clothes_Own)
-      run: rdflint -config .rdflint/Clothes_Own.yml
+      run: |
+        echo "::add-matcher::.github/rdflint-annotations.json"
+        rdflint -config .rdflint/Clothes_Own.yml
+        echo "::remove-matcher owner=rdflint::"
 
     - name: Run rdflint (Unit_memberOf)
       run: rdflint -config .rdflint/Unit_memberOf.yml
 
     - name: Run rdflint
       run: |
-        echo "::add-matcher::.github/rdflint-annotations.json"
         rdflint -config .rdflint/rdflint-config.yml
-        echo "::remove-matcher owner=rdflint::"
