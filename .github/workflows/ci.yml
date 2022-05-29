@@ -18,10 +18,12 @@ jobs:
 
     - name: Run rdflint (Clothes_Own)
       run: |
+        wget https://jitpack.io/com/github/imas/rdflint/gh_annotations-SNAPSHOT/rdflint-gh_annotations-SNAPSHOT.jar
         echo $GITHUB_ACTIONS
         # echo "::warning file=RDFs/CinderellaGirls.rdf,line=6344,endLine=6344,title=RDFs/CinderellaGirls.rdf#L6344::データ型が揃っていません: FLOATが予測されましたがSTRINGです (line: 6344, col: 1, triple: https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Sato_Shin - https://sparql.crssnky.xyz/imasrdf/URIs/imas-schema.ttl#Waist - "きゅっ"@ja)"
         # echo "::add-matcher::.github/rdflint-annotations.json"
-        rdflint -config .rdflint/Clothes_Own.yml
+        #rdflint -config .rdflint/Clothes_Own.yml
+        java -jar rdflint-gh_annotations-SNAPSHOT.jar -config .rdflint/Clothes_Own.yml
         # echo "::remove-matcher owner=rdflint::"
 
     - name: Run rdflint (Unit_memberOf)
