@@ -15,17 +15,16 @@ jobs:
         distribution: temurin
         java-version: 17
     - uses: imas/setup-rdflint@v2
+      with:
+        rdflint-version: gh_annotations-SNAPSHOT
 
     - name: Run rdflint (Clothes_Own)
       run: |
         echo $GITHUB_ACTIONS
-        if [ "$GITHUB_ACTIONS" == "true"]; then
-          echo "!! github actions !!"
-        fi
-        echo "::warning file=RDFs/CinderellaGirls.rdf,line=6344,endLine=6344,title=RDFs/CinderellaGirls.rdf#L6344::データ型が揃っていません: FLOATが予測されましたがSTRINGです (line: 6344, col: 1, triple: https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Sato_Shin - https://sparql.crssnky.xyz/imasrdf/URIs/imas-schema.ttl#Waist - "きゅっ"@ja)"
-        echo "::add-matcher::.github/rdflint-annotations.json"
+        # echo "::warning file=RDFs/CinderellaGirls.rdf,line=6344,endLine=6344,title=RDFs/CinderellaGirls.rdf#L6344::データ型が揃っていません: FLOATが予測されましたがSTRINGです (line: 6344, col: 1, triple: https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Sato_Shin - https://sparql.crssnky.xyz/imasrdf/URIs/imas-schema.ttl#Waist - "きゅっ"@ja)"
+        # echo "::add-matcher::.github/rdflint-annotations.json"
         rdflint -config .rdflint/Clothes_Own.yml
-        echo "::remove-matcher owner=rdflint::"
+        # echo "::remove-matcher owner=rdflint::"
 
     - name: Run rdflint (Unit_memberOf)
       run: rdflint -config .rdflint/Unit_memberOf.yml
