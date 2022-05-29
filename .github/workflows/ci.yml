@@ -15,8 +15,6 @@ jobs:
         distribution: temurin
         java-version: 17
     - uses: imas/setup-rdflint@v2
-      with:
-        rdflint-version: gh_annotations-SNAPSHOT
 
     - name: Run rdflint (Clothes_Own)
       run: |
