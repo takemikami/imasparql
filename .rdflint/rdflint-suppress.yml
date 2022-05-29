@@ -3,6 +3,14 @@ RDFs/CinderellaGirls.rdf:
     level: INFO
     locationType: TRIPLE
     subject: https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Sato_Shin
+    predicate: https://sparql.crssnky.xyz/imasrdf/URIs/imas-schema.ttl#Waist
+    object: '"きゅっ"@ja'
+    message: 'DataType not matched: expected FLOAT, but STRING (triple: https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Sato_Shin
+        - https://sparql.crssnky.xyz/imasrdf/URIs/imas-schema.ttl#Waist - "きゅっ"@ja)'
+  - key: com.github.imas.rdflint.validator.impl.notmatchedGuessedDataType
+    level: INFO
+    locationType: TRIPLE
+    subject: https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Sato_Shin
     predicate: https://sparql.crssnky.xyz/imasrdf/URIs/imas-schema.ttl#Bust
     object: '"ぼんっ"@ja'
     message: 'DataType not matched: expected FLOAT, but STRING (triple: https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Sato_Shin
